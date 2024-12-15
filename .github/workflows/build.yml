@@ -4,13 +4,12 @@ on:
   push:
     paths:
       - ".github/workflows/build.yml"
-      - "app/**"
+      - "app/boards/shields/sofle/**"
   pull_request:
     paths:
       - ".github/workflows/build.yml"
-      - "app/**"
-  schedule:
-    - cron: "22 4 * * *"
+      - "app/boards/shields/sofle/**"
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name == 'schedule' }}
