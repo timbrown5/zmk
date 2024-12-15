@@ -4,11 +4,11 @@ on:
   push:
     paths:
       - ".github/workflows/build.yml"
-      - "app/**"
+      - "app/boards/shields/sofle/**"
   pull_request:
     paths:
       - ".github/workflows/build.yml"
-      - "app/**"
+      - "app/boards/shields/sofle/**"
   workflow_dispatch:
 
 concurrency:
